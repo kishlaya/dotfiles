@@ -1,7 +1,7 @@
 ### Install basic stuff
 
 sudo apt update
-sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+sudo apt-get install curl build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
 
 # git
 sudo add-apt-repository ppa:git-core/ppa
@@ -9,8 +9,8 @@ sudo apt-get update
 sudo apt-get install git
 
 # also this unrelated thing
-git config user.name "Kishlaya Jaiswal"
-git config user.email "kishlaya.j@gmail.com"
+git config --global user.name "Kishlaya Jaiswal"
+git config --global user.email "kishlaya.j@gmail.com"
 
 # nodejs and npm
 curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh
