@@ -1,27 +1,33 @@
-sudo apt update
+### Install basic stuff
 
+sudo apt update
 sudo apt-get install build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
 
-# Install git
+# git
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
 
-# Install nodejs and npm
+# also this unrelated thing
+git config user.name "Kishlaya Jaiswal"
+git config user.email "kishlaya.j@gmail.com"
+
+# nodejs and npm
 curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt update
 sudo apt-get install nodejs
 sudp apt-get install npm
 
-# Install atom
+# atom
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt-get install atom
 
+# chrome (because I prefer chrome)
 sudo apt-get install google-chrome-stable
 
-
+## Some git extras
 # Type `git open` to open the GitHub page or website for a repository.
 npm install -g git-open
 
@@ -35,12 +41,22 @@ npm install -g diff-so-fancy
 npm install --global trash-cli
 
 
-# Install zsh and oh-my-zsh
+### Cool stuff starts here
+
+# zsh
 sudo apt-get install zsh
 chsh -s $(which zsh) $(whoami)
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+cp .zshrc ~/
 
+# zsh syntax highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # for the c alias (syntax highlighted cat)
 sudo apt-get install python3-pip
 pip3 install Pygments
+
+
+# github.com/rupa/z   - oh how i love you
+git clone https://github.com/rupa/z.git ~/z
+# consider reusing your current .z file if possible. it's painful to rebuild :)
