@@ -17,7 +17,7 @@ curl -sL https://deb.nodesource.com/setup_8.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt update
 sudo apt-get install nodejs
-sudp apt-get install npm
+sudo apt-get install npm
 
 # atom
 sudo add-apt-repository ppa:webupd8team/atom
@@ -25,6 +25,9 @@ sudo apt update
 sudo apt-get install atom
 
 # chrome (because I prefer chrome)
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo apt-get update
 sudo apt-get install google-chrome-stable
 
 ## Some git extras
