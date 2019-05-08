@@ -63,3 +63,13 @@ pip3 install Pygments
 # github.com/rupa/z   - oh how i love you
 git clone https://github.com/rupa/z.git ~/z
 # consider reusing your current .z file if possible. it's painful to rebuild :)
+
+
+# Hide Top Bar GNOME Extension
+mkdir -p ~/.local/share/gnome-shell/extensions/
+cd ~/.local/share/gnome-shell/extensions/
+git clone https://github.com/mlutfy/hidetopbar.git hidetopbar@mathieu.bidon.ca
+cd hidetopbar@mathieu.bidon.ca
+make schemas
+gnome-shell-extension-tool -e hidetopbar@mathieu.bidon.ca
+gnome-shell --replace &
