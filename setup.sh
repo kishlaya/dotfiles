@@ -1,12 +1,12 @@
 ### Install basic stuff
 
 sudo apt update
-sudo apt-get install curl build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+sudo apt install curl build-essential libssl-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
 
 # git
 sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install git
 
 # also this unrelated thing
 git config --global user.name "Kishlaya Jaiswal"
@@ -22,13 +22,13 @@ sudo apt-get install npm
 # atom
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
-sudo apt-get install atom
+sudo apt install atom
 
 # chrome (because I prefer chrome)
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+sudo apt update
+sudo apt install google-chrome-stable
 
 ## Some git extras
 # Type `git open` to open the GitHub page or website for a repository.
@@ -56,7 +56,7 @@ cp .zshrc ~/
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # for the c alias (syntax highlighted cat)
-sudo apt-get install python3-pip
+sudo apt install python3-pip
 pip3 install Pygments
 
 
