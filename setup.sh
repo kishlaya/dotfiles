@@ -77,3 +77,8 @@ cd hidetopbar@mathieu.bidon.ca
 make schemas
 gnome-shell-extension-tool -e hidetopbar@mathieu.bidon.ca
 gnome-shell --replace &
+
+
+# Copying contents to clipboard
+aptitude install xclip
+# xclip -sel cli < file.txt
