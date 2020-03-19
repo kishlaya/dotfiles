@@ -59,6 +59,9 @@ cp .zshrc ~/
 # zsh syntax highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # for the c alias (syntax highlighted cat)
 sudo aptitude install python3-pip
 pip3 install Pygments
